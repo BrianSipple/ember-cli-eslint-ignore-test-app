@@ -1,3 +1,10 @@
 module.exports = {
-  extends: require.resolve('ember-cli-eslint/coding-standard/ember-testing.js')
+  env: {
+    'embertest': true
+  },
+
+  /* Define something that will only fail when linting reports/sorter.js */
+  rules: {
+    'no-var': 2
+  }
 };

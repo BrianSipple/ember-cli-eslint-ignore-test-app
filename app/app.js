@@ -5,6 +5,8 @@ import config from './config/environment';
 
 let App;
 
+foo = 42; // fails ESLint no-undef rule
+
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
